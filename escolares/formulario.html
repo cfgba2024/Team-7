@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de actividad</title>
+    <link rel="stylesheet" href="../escolares/form.css">
+    <link rel="shortcut icon" href="../components/img/Logo.svg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="containerxd">
+    <div class="raya"></div>
+    <div class="register-container">
+        <div class="register-form">
+            <h1>Registra la actividad</span></h1>
+            <div class="separator"> Completa la actividad</div>
+            <form method="POST">
+                <div class="name-container">
+                    <div class="name">
+                        <label for="name" class="name">Nombre y apellido</label>
+                        <input type="text" id="name" name="name" minlength="3" placeholder="Ingresa tu nombre completo">
+                    </div>
+                </div>
+                    <label for="user" class="user">Fecha</label>
+                    <input type="date" id="user" placeholder="Ingresa la fecha"></input>
+                    <label>Actividad</label>
+                    <select class="form-select" aria-label="Default select example">
+                      <option selected>Seleccionar la actividad</option>
+                      <option value="1">Apicultura</option>
+                      <option value="2">Ganaderia</option>
+                      <option value="3">Huerta</option>
+                    </select>
+
+                    <div class="mb-3">
+                      <label for="exampleFormControlTextarea1" class="form-label">Observaciones</label>
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Describi las observaciones que obtuviste"></textarea>
+                    </div>
+                    
+            </form>
+
+            <button class="button-agregar"><a href="#">Agregar campo</a></button>
+            <button class="button-register"><a href="#">Registrar datos</a></button>
+        </div>
+    </div>
+</div>
+    <script src="../js/formulario_script.js"></script>
+</body>
+</html>
+
+   
