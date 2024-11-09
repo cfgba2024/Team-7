@@ -6,6 +6,7 @@ import Informes from "./views/Informes"
 import Clases from "./views/Clases"
 import Header from "./components/Header"
 import Navbar from "./components/Navbar"
+import LoginForm from "./Login"
 
 
 function App() {
@@ -16,10 +17,12 @@ function App() {
       <Header/>
       <Navbar/>
       <Routes>
+
         <Route path="/" element={<Home/>}/> 
          <Route path="/talleres" element={<Talleres/>}/> 
         <Route path="/informes" element={<Informes/>}/> 
         <Route path="/clases" element={<Clases/>}/>  
+        <Route path="/login" element={<LoginForm/>}/> 
       </Routes>
       
     </Router></>
