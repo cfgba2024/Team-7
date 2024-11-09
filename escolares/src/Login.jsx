@@ -12,6 +12,10 @@ const LoginForm = () => {
 
   const navigate = useNavigate();
 
+  const handleLogin = () => {
+    navigate("/clases")
+  }
+
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
     setFormData({
@@ -38,7 +42,7 @@ const LoginForm = () => {
   };
 
   return (
-    <div className="body__login">
+    <div className="body__login body-login">
         
       <div className="login__container">
         <div className="login__container__bienvenida">
@@ -103,7 +107,7 @@ const LoginForm = () => {
               </label>
             </div>
             {error && <p className="error-message">{error}</p>}
-            <button className="login__container__form--button" type="submit">
+            <button className="login__container__form--button" type="submit" onClick={handleLogin}>
               Iniciar sesión
             </button>
           </form>

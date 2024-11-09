@@ -1,5 +1,6 @@
-body {
+.body-formulario {
     background-color: #66a718;
+    margin: 5px
 }
 
 * {

@@ -1,6 +1,6 @@
 /* views/loginstyle.css */
 
-body {
+.body-login {
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
