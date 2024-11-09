@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-//import "../assets/styles/loginform.css";
+import "./views/loginstyle.css";
 
 const LoginForm = () => {
   const [formData, setFormData] = useState({
@@ -39,6 +39,7 @@ const LoginForm = () => {
 
   return (
     <div className="body__login">
+        
       <div className="login__container">
         <div className="login__container__bienvenida">
           <h1 className="login__container__bienvenida--h1">¡Bienvenido!</h1>
@@ -48,7 +49,7 @@ const LoginForm = () => {
             <h2 className="login__container__inses--h2">Inicia sesión</h2>
           </div>
           <form className="login__container__form" onSubmit={handleSubmit}>
-            
+
             <div className="login__container__form__form-group">
               <label
                 className="login__container__form__form-group--label"
