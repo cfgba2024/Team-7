@@ -1,0 +1,7 @@
+#link-nav{
+    color: white;
+}
+#link-nav:focus{
+    color: black;
+    text-decoration: underline;
+}
